@@ -1,0 +1,280 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #151515;
+    background-color: #242526;
+}
+
+h1, h2 {
+    font-family: 'Fira Mono', monospace;
+    color: white;
+}
+
+h3 {
+    font-family: 'Noto Sans', sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+.main-content img {
+    padding: 20px;
+    max-width: 100%;
+}
+
+.page {
+    position: absolute;
+    display: block;
+    min-height: 100%;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.page-container {
+    position: relative;
+    display: block;
+    min-height: 100%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.section-title {
+    margin: 100px auto;
+}
+
+.section-title h2 {
+    font-size: 1.8em;
+    padding: 80px 0 30px 0;
+}
+
+.button {
+    transition: all .2s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.05);
+}
+.show {
+    display: block;
+    position: static;
+    text-align: center;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    max-height: max-content;
+}
+
+/* Name Typewriter Animation */
+
+.typewriter {
+    display: block;
+    width: max-content;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.typewriter h1 {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    font-size: 2.5em;
+    border-right: 0.8em solid;
+    box-sizing: border-box;
+    animation: typing 3s steps(11, end), blink 1s step-end infinite;
+}
+
+.typewriter h1 a {
+    text-decoration: none;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from, to {
+        border-color: white;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Short Bio */
+
+.short-bio {
+    margin: 20px auto;
+}
+
+.short-bio p {
+	color: white;
+    padding-bottom: 5px;
+}
+
+.short-bio p a {
+    color: #4A2040;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.short-bio p a:hover {
+    color: #BC4E69;
+    transition: all 0.2s ease-out;
+}
+
+/* Social Links */
+
+.social-links {
+    display: block;
+    margin: 20px auto;
+}
+
+.social-links a {
+    text-align: center;
+    text-decoration: none;
+}
+
+.social-links a img {
+    padding: 7px;
+    margin: 0 5px;
+    width: auto;
+    height: 40px;
+}
+
+/* About Me Terminal Window */
+
+.about {
+    text-align: left;
+    font-family: 'Fira Mono', monospace;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+.terminal-header {
+    background-color: green;
+    color: #EFF2F1;
+    padding: 7px 20px 5px 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px 10px 0 0;
+}
+
+.title, .right-side-buttons {
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.right-side-buttons .fas, .right-side-buttons .far {
+    padding-left: 10px;
+    color: #EFF2F1;
+    border-radius: 50%;
+}
+
+.terminal-window {
+    background-color: #151515;
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    letter-spacing: 0.01em;
+}
+
+.statement {
+    margin-bottom: 30px;
+}
+
+#top.statement {
+    margin-top: 10px;
+}
+
+#bottom.statement {
+    margin-bottom: 40px;
+}
+
+#bottom.statement .input span {
+    border-left: 0.8em solid;
+    animation: carat 1s steps(1) infinite;
+}
+
+.input {
+    color: #EFF2F1;
+    margin-bottom: 5px;
+}
+
+.return {
+    color: #FCCA73;
+}
+
+.return a {
+    color: #47C2FF;
+    text-decoration: none;
+}
+
+.return a:hover {
+    color: #ffa2bb;
+    transition: all 0.2s ease-out;
+}
+
+.about .terminal-window .statement .input:before {
+    content: ">\A0";
+}
+
+@keyframes carat {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* For Larger Screen */
+
+@media only screen and (min-width: 768px) {
+    .typewriter h1 {
+        font-size: 3.2em;
+        border-right: 0.75em solid white;
+    }
+    .section-title h2 {
+        font-size: 2.2em;
+    }
+    .page {
+        position: relative;
+        max-width: 1000px;
+        text-align: center;
+        align-items: center;
+        scroll-behavior: smooth;
+    }
+    .page-container {
+        text-align: center;
+        align-items: center;
+    }
+}
+
+/* Photos layout for medium and larger screens */
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .masonry-layout {
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .masonry-layout {
+        column-count: 3;
+    }
+}
