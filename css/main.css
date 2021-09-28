@@ -25,6 +25,7 @@ h3 {
 
 a {
     color: inherit;
+    cursor: pointer;
 }
 
 .main-content img {

@@ -16,7 +16,7 @@
 
 </head>
 
-<body>
+<body id="background">
     <div class="page" id="home">
         <div class="page-container">
             <div class="typewriter">
@@ -26,45 +26,52 @@
                 <p>Computer Engineering Student @ NTNU</p>
 				<p></p>
             </div>
-
-            <div class="about">
+            
+            <div class="about" id="terminal">
                 <div class="terminal-header">
                     <div class="title">info.exe</div>
                     <div class="right-side-buttons">
-                        <div class="fas fa-window-minimize"></div>
+                        <div class="fas fa-window-minimize" ></div>
                         <div class="fas fa-window-restore"></div>
-                        <div class="fas fa-window-close"></div>
+                        <a onclick="easterEgg()">
+                            <div class="fas fa-window-close"></div>
+                        </a>
                     </div>
                 </div>
                 <div class="terminal-window">
 					<div class="statement" id="top">
-                        <p class="input">ivan.fullname</p>
+                        <p class="input">getFullName();</p>
                         <p class="return">Ivan Norderhaug</p>
                     </div>
 					<div class="statement" id="top">
-                        <p class="input">ivan.age</p>
+                        <p class="input">getAge();</p>
                         <p class="return">21</p>
                     </div>
                     <div class="statement" id="top">
-                        <p class="input">ivan.location</p>
-                        <p class="return">Gjøvik, Norge</p>
+                        <p class="input">getLocation();</p>
+                        <p class="return">Gjøvik, Norway</p>
                     </div>
                     <div class="statement">
-                        <p class="input">ivan.contact</p>
+                        <p class="input">getContact();</p>
                         <p class="return"><a href="mailto:ivan_norderhaug@outlook.com">ivan_norderhaug@outlook.com</a></p>
                     </div>
                     <div class="statement">
-                        <p class="input">ivan.skills</p>
-                        <p class="return">[Java, Python]</p>
+                        <p class="input">getSkills();</p>
+                        <p class="return">[Java, Python, C++]</p>
                     </div>
                     <div class="statement">
-                        <p class="input">ivan.socials</p>
-                        <p class="return">[<a href="https://www.instagram.com/ivannorderhaug/">instagram</a>, <a href="https://www.linkedin.com/in/ivannorderhaug/">linkedin</a>]
+                        <p class="input">getSocial();</p>
+                        <p class="return">[<a href="https://www.linkedin.com/in/ivannorderhaug/">linkedin</a>]
                         </p>
                     </div>
                     <div class="statement">
-                        <p class="input">ivan.interests</p>
-                        <p class="return">[Coding, Stonks, Gaming, Powerlifting]
+                        <p class="input">getInterests();</p>
+                        <p class="return">[Coding, Powerlifting]
+                        </p>
+                    </div>
+					<div class="statement">
+                        <p class="input">getProjects();</p>
+                        <p class="return">[To be added...]
                         </p>
                     </div>
                     <div class="statement" id="bottom">
@@ -74,6 +81,6 @@
             </div>
         </div>
     </div>
+    <script src="js/script.js"></script>
 </body>
-
 </html>
