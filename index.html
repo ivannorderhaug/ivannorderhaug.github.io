@@ -16,20 +16,19 @@
 
 </head>
 
-<body id="background">
+<body id="background" onload="setTimeout(wait, 4000)">
     <div class="page" id="home">
         <div class="page-container">
             <div class="typewriter">
-                <h1><a href="/">> Ivan Norderhaug</a></h1>
+                <h1><a id="fullName" href="#">> Ivan Norderhaug</a></h1>
             </div>
             <div class="short-bio">
                 <p>Computer Science & Engineering Student @ NTNU</p>
 				<p></p>
             </div>
-            
             <div class="about" id="terminal">
                 <div class="terminal-header">
-                    <div class="title">information.exe</div>
+                    <div class="title">Terminal</div>
                     <div class="right-side-buttons">
                         <div class="fas fa-window-minimize" ></div>
                         <div class="fas fa-window-restore"></div>
@@ -45,7 +44,7 @@
                     </div>
 					<div class="statement" id="top">
                         <p class="input">age</p>
-                        <p class="return">21</p>
+                        <p class="return">22</p>
                     </div>
                     <div class="statement" id="top">
                         <p class="input">location</p>
@@ -57,7 +56,7 @@
                     </div>
                     <div class="statement">
                         <p class="input">skills --programming</p>
-                        <p class="return">[Java, Python, C++, C#, .NET Framework]</p>
+                        <p class="return">[Java, Python, C#, .NET Framework, Go]</p>
                     </div>
                     <div class="statement">
                         <p class="input">social</p>
@@ -70,9 +69,14 @@
                         </p>
                     </div>
                     <div class="statement" id="bottom">
-                        <p class="input"><span>&nbsp;</span></p>
+                        <p class="input" id="typing"><span>&nbsp;</span></p>
                     </div>
                 </div>
+            </div>
+            <div id="secret" style="visibility: hidden; text-align: center;">
+                <h1>Why would try to close the terminal? ಠ_ಠ</h1>
+                <h1>Whatever your reason may be, have a free cookie for the effort!</h1>
+                <img src="assets/cookie.png" style="width: 25%;height: 25%;">
             </div>
         </div>
     </div>
