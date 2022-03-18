@@ -96,6 +96,11 @@ a {
     animation: typing 3s steps(11, end), blink 1s step-end infinite;
 }
 
+.terminal {
+    --color: white;
+    --background: transparent;
+}
+
 .typewriter h1 a {
     text-decoration: none;
 }
@@ -194,6 +199,7 @@ a {
     padding: 20px;
     border-radius: 0 0 10px 10px;
     letter-spacing: 0.01em;
+    height:500px
 }
 
 .statement {

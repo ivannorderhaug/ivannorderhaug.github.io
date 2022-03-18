@@ -12,11 +12,24 @@
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
 
+    <script src=
+    "https://code.jquery.com/jquery-3.3.1.min.js">
+    </script>
+
+    <!--Copyright (c) 2022 Jakub T. Jankiewicz " + "<https://jcubic.pl/me> 
+    Modified for my own usage
+    -->
+    <script src=js/terminal.js></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css" />
+
+
+    
     <link href="css/main.css" rel="stylesheet" type="text/css">
 
 </head>
 
 <body id="background" onload="setTimeout(wait, 4000)">
+
     <div class="page" id="home">
         <div class="page-container">
             <div class="typewriter">
@@ -37,46 +50,14 @@
                         </a>
                     </div>
                 </div>
-                <div class="terminal-window">
-					<div class="statement" id="top">
-                        <p class="input">name</p>
-                        <p class="return">Ivan Norderhaug</p>
-                    </div>
-					<div class="statement" id="top">
-                        <p class="input">age</p>
-                        <p class="return">22</p>
-                    </div>
-                    <div class="statement" id="top">
-                        <p class="input">location</p>
-                        <p class="return">Gjøvik, Norway</p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">contact</p>
-                        <p class="return"><a href="mailto:ivan_norderhaug@outlook.com">ivan_norderhaug@outlook.com</a></p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">skills --programming</p>
-                        <p class="return">[Java, Python, C#, .NET Framework, Go]</p>
-                    </div>
-                    <div class="statement">
-                        <p class="input">social</p>
-                        <p class="return">[<a href="https://www.linkedin.com/in/ivannorderhaug/">linkedin</a>]
-                        </p>
-                    </div>
-					<div class="statement">
-                        <p class="input">projects</p>
-                        <p class="return">[To be added...]
-                        </p>
-                    </div>
-                    <div class="statement" id="bottom">
-                        <p class="input" id="typing"><span>&nbsp;</span></p>
-                    </div>
+                <div class="terminal-window" id="terminal-window">
                 </div>
             </div>
             <div id="secret" style="visibility: hidden; text-align: center;">
-                <h1>Why would try to close the terminal? ಠ_ಠ</h1>
+                <h1>Why would you close the terminal? ಠ_ಠ</h1>
                 <h1>Whatever your reason may be, have a free cookie for the effort!</h1>
-                <img src="assets/cookie.png" style="width: 25%;height: 25%;">
+                <br/>
+                <img src="assets/cookie.png" style="width: 25%;height: 25%;"onclick="window.location.href='https://cookie-clicker.co/'">
             </div>
         </div>
     </div>
