@@ -99,6 +99,7 @@ a {
 .terminal {
     --color: white;
     --background: transparent;
+    overflow-x: hidden;
 }
 
 .typewriter h1 a {
@@ -199,7 +200,8 @@ a {
     padding: 20px;
     border-radius: 0 0 10px 10px;
     letter-spacing: 0.01em;
-    height:500px
+    height:500px;
+    overflow-x: hidden;
 }
 
 .statement {
